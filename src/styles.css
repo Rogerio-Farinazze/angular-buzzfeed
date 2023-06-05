@@ -1,12 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  border: 0;
-  color: lightgray;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-body{
-  background-color: #222222;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

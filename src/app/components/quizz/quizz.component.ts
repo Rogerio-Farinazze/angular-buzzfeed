@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import quizz_questions from '../../../assets/data/quizz_questions.json';
 import { Type } from '@angular/compiler';
+import { map } from 'rxjs';
 
 @Component({
   selector: 'app-quizz',
@@ -35,13 +36,16 @@ export class QuizzComponent implements OnInit {
       this.questionIndex = 0
       this.questionMaxIndex = this.questions.length
 
+
     }
   }
 
-  playerChoose(value:string){
-    this.answers.push(value)
-    this.nextStep()
+  playerChoose(value:string[]){
+    value.forEach(item => {
+      this.answers.push(item)
+    });
 
+    this.nextStep()
 
   }
 
@@ -53,7 +57,9 @@ export class QuizzComponent implements OnInit {
     } else {
       const finalAnswer:string = await this.checkResult(this.answers)
       this.finished = true
+
       this.answerSelected = quizz_questions.results[finalAnswer as keyof typeof quizz_questions.results]
+
     }
   }
 
@@ -64,10 +70,12 @@ export class QuizzComponent implements OnInit {
         arr.filter(item => item === current).length
         ){
           return previous
+
       } else {
         return current
       }
     })
+
     return result
   }
 

@@ -1,55 +1,61 @@
 {
-  "title":"Você seria um heroi ou vilão ?",
+  "title":"Teste Vocacional",
   "questions":[
     {
       "id":1,
-      "question": "Qual super poder você escolheria ?",
+      "question": "Você se sente confiante em resolver problemas de Matemática?",
       "options":[
-        {"id": 1, "name":"Raios-Lasers", "alias":"A"},
-        {"id": 2, "name":"Voar", "alias":"B"},
-        {"id": 3, "name":"Explodir coisas", "alias":"A"},
-        {"id": 4, "name":"Curar feridas", "alias":"B"},
-        {"id": 5, "name":"Soltar fogo pelas mãos", "alias":"A"}
+        {"id": 1, "name":"Não", "alias":["A"]},
+        {"id": 2, "name":"Sim", "alias":["A","A"]}
       ]
     },
     {
       "id":2,
-      "question": "Quem você salvaria primeiro ?",
+      "question": "Você se sente confiante em resolver problemas de Matemática?",
       "options":[
-        {"id": 1, "name":"Crianças", "alias":"A"},
-        {"id": 2, "name":"Idosos", "alias":"A"},
-        {"id": 3, "name":"Não saberia escolher", "alias":"B"}
+        {"id": 1, "name":"B", "alias":["B"]},
+        {"id": 2, "name":"BB", "alias":["B","B"]},
+        {"id": 3, "name":"F", "alias":["F"]},
+        {"id": 4, "name":"FF", "alias":["F","F"]}
       ]
     },
     {
       "id":3,
-      "question": "Qual a sua maior preocupação ao enfretar outro super ser ?",
+      "question": "Pergunta 3?",
       "options":[
-        {"id": 1, "name":"Não destruir prédios", "alias":"B"},
-        {"id": 2, "name":"Socar a cara do inimigo", "alias":"A"},
-        {"id": 3, "name":"Não sujar meu traje", "alias":"A"},
-        {"id": 4, "name":"Não deixar ninguém se ferir", "alias":"B"}
+        {"id": 1, "name":"E", "alias":["E"]},
+        {"id": 2, "name":"EE", "alias":["E","E"]},
+        {"id": 3, "name":"B", "alias":["B"]},
+        {"id": 4, "name":"BB", "alias":["B","B"]}
       ]
     },
     {
       "id":4,
-      "question": "Qual o seu maior foco ?",
+      "question": "Pergunta 4?",
       "options":[
-        {"id": 1, "name":"Ficar rico com poderes", "alias":"A"},
-        {"id": 2, "name":"Salvar a cidade", "alias":"B"}
+        {"id": 1, "name":"D", "alias":["D"]},
+        {"id": 2, "name":"DD", "alias":["D","D"]},
+        {"id": 3, "name":"A", "alias":["A"]},
+        {"id": 4, "name":"AA", "alias":["A","A"]}
       ]
     },
     {
       "id":5,
-      "question": "Qual o seu apelido de super ser ?",
+      "question": "Pergunta 5?",
       "options":[
-        {"id": 1, "name":"O Terrivel", "alias":"A"},
-        {"id": 2, "name":"Amigo da vizinhança", "alias":"B"}
+        {"id": 1, "name":"C", "alias":["C"]},
+        {"id": 2, "name":"CC", "alias":["C","C"]},
+        {"id": 3, "name":"E", "alias":["E"]},
+        {"id": 4, "name":"EE", "alias":["E","E"]}
       ]
     }
   ],
   "results":{
-    "A": "Você muito provavelmente seria um super vilão!",
-    "B": "Você muito provavelmente seria um super Herói!"
+    "A": "Exatas!",
+    "B": "Humanas!",
+    "C": "Resposta C!",
+    "D": "Resposta D!",
+    "E": "Resposta E!",
+    "F": "Resposta F!"
   }
 }
